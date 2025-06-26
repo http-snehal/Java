@@ -5,7 +5,7 @@ public class maths {
         System.out.println(Math.PI);
         System.out.println(Math.E);
          
-        double result ;
+        double result = 0  ;
        // result = Math.pow(2 , 3); 8
        // result = Math.abs(-5); 5
       // result = Math.sqrt(9); 3

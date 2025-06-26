@@ -8,12 +8,9 @@ public class calculator {
         double num1;
         double num2 ; 
         int choice ;
+        boolean isValid = false;
 
 
-
-
-
-        
         System.out.print("enter the number 1: ");
         num1 = sc.nextDouble();
 
@@ -36,6 +33,7 @@ public class calculator {
             case 4 ->{
              if(num2 == 0) {
                 System.out.println("cant divide it with 0");
+                isValid = false;
 
             }
             else{
@@ -50,8 +48,9 @@ public class calculator {
 
 
         }
-
+        if(isValid == true){
         System.out.println(result);
+        }
 
 
 
