@@ -10,6 +10,10 @@ public class calculator {
         int choice ;
 
 
+
+
+
+        
         System.out.print("enter the number 1: ");
         num1 = sc.nextDouble();
 
