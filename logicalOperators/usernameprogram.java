@@ -6,7 +6,8 @@ public class usernameprogram {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+            String user = null ;
+            String pass = null ;
        
         Boolean isuserValid = true ;
         Boolean ispasswordValid = true ;
@@ -22,19 +23,19 @@ public class usernameprogram {
         }
         else if (username.contains(" ")){
             System.out.println("username should not contain spaces");
-            ispasswordValid = false;
+            isuserValid = false;
         }
         if(isuserValid){
         
-             String user = username;
+             user = username;
 
             System.out.print("enter the password: ");
             String password = sc.nextLine();
 
-            if(password.length()>=4 && username.length()<=15 && !username.contains(" ")){
+            if(password.length()>=4 && password.length()<=15 && !password.contains(" ")){
 
                 System.out.println("now you can login");
-                 String pass = password;
+                 pass = password;
             }
 
             else{
@@ -51,9 +52,8 @@ public class usernameprogram {
         System.out.print("enter the password: ");
         String passkey = sc.nextLine();
 
-            String user = null;
-            String pass = null;
-            if(user == name && passkey == pass){
+
+            if(user.equals(name) && passkey.equals(pass)){
                 System.out.print("welcome in the system");
             }
 
